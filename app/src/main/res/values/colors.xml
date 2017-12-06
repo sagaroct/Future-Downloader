@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDownloadTitle">#91918d</color>
+    <color name="progressBgColor">#d3cbd8</color>
+    <color name="colorCompletedDownloadBg">#ccc6c6</color>
+    <color name="lightGrey">#dbd9d9</color>
+    <color name="darkGrey">#969696</color>
+    <color name="pinkFuture">#d8cbd1</color>
+    <color name="greyBlue">#c7d2d4</color>
+    <color name="green">#65c976</color>
+    <color name="violet_dark">#9a2ce7</color>
+    <color name="violet_light">#b676e3</color>
+    <color name="red">#ff3333</color>
+    <color name="white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/violet_dark</item>
+        <item name="colorPrimaryDark">@color/violet_dark</item>
+        <item name="colorAccent">@color/violet_dark</item>
+    </style>
+
+    <style name="AppTheme.Button.Positive" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/violet_dark</item>
+    </style>
+    <style name="AppTheme.Button.Negative" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="DestructiveButton"
+           parent="android:Widget.DeviceDefault.Button.Borderless">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+</resources>

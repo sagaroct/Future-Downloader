@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.sagar.sampledownloader">
+
+    <!-- Permission: Allow Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Permission: Writing to SDCard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme"
+        android:name=".FutureDownloaderApplication">
+
+
+
+      <!--  <activity android:name=".SplashActivity"
+                  android:launchMode="singleTask"
+            >
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        </activity>-->
+
+        <activity android:name=".view.MainActivity"
+                  android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="sftp"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="sftp"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.apk"/>
+                <data android:pathPattern=".*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.apk.*"/>
+                <data android:pathPattern=".*\\.mp3"/>
+                <data android:pathPattern=".*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.mp3.*"/>
+                <data android:pathPattern=".*\\.ape"/>
+                <data android:pathPattern=".*\\.mp4"/>
+                <data android:pathPattern=".*\\.avi"/>
+                <data android:pathPattern=".*\\.wmv"/>
+                <data android:pathPattern=".*\\.wav"/>
+                <data android:pathPattern=".*\\.asf"/>
+                <data android:pathPattern=".*\\.mpg"/>
+                <data android:pathPattern=".*\\.3gp"/>
+                <data android:pathPattern=".*\\.3gpp"/>
+                <data android:pathPattern=".*\\.amr"/>
+                <data android:pathPattern=".*\\.rm"/>
+                <data android:pathPattern=".*\\.rmvb"/>
+                <data android:pathPattern=".*\\.ogg"/>
+                <data android:pathPattern=".*\\.oga"/>
+                <data android:pathPattern=".*\\.ogv"/>
+                <data android:pathPattern=".*\\.wma"/>
+                <data android:pathPattern=".*\\.doc"/>
+                <data android:pathPattern=".*\\.docx"/>
+                <data android:pathPattern=".*\\.ppt"/>
+                <data android:pathPattern=".*\\.pps"/>
+                <data android:pathPattern=".*\\.ppx"/>
+                <data android:pathPattern=".*\\.pptx"/>
+                <data android:pathPattern=".*\\.xls"/>
+                <data android:pathPattern=".*\\.xlsx"/>
+                <data android:pathPattern=".*\\.chm"/>
+                <data android:pathPattern=".*\\.txt"/>
+                <data android:pathPattern=".*\\.zip"/>
+                <data android:pathPattern=".*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip.*"/>
+                <data android:pathPattern=".*\\.rar"/>
+                <data android:pathPattern=".*\\.rar.*"/>
+                <data android:pathPattern=".*\\..*\\.rar.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\.rar.*"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.rar.*"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\.torrent"/>
+                <data android:pathPattern=".*\\.mkv"/>
+                <data android:pathPattern=".*\\.swf"/>
+                <data android:pathPattern=".*\\.flv"/>
+                <data android:pathPattern=".*\\.aiff"/>
+                <data android:pathPattern=".*\\.pcs"/>
+                <data android:pathPattern=".*\\.mov"/>
+                <data android:pathPattern=".*\\.jpg"/>
+                <data android:pathPattern=".*\\.png"/>
+                <data android:pathPattern=".*\\.tif"/>
+                <data android:pathPattern=".*\\.gif"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".view.SettingsActivity"/>
+
+        <service android:name=".service.MultiDownloadService"/>
+
+        <receiver
+            android:name=".receiver.AlarmManagerBroadcastReceiver"
+            />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

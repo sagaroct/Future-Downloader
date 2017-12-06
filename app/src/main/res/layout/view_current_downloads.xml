@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/child_selector"
+              android:padding="@dimen/row_bottom_margin"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center_vertical"
+       >
+
+    <com.example.sagar.sampledownloader.customviews.TextProgressBar
+        android:id="@+id/tv_progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="9"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/textprogressbardrawable"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        />
+
+    <TextView
+        android:id="@+id/tv_download_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="New Text"
+        android:textSize="@dimen/default__very_small_size"
+        android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+</LinearLayout>

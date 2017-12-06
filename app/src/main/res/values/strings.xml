@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Future Downloader</string>
+    <string name="current_downloads">Current Downloads</string>
+    <string name="future_downloads">Future Downloads</string>
+    <string name="past_downloads">Past Downloads</string>
+    <string name="add_url">Add Url</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_url">example: https://starwars.mp4</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="file_name">File Name</string>
+    <string name="dummy_date_time">12/10/1992 \n 22:10</string>
+    <string name="remove">Remove</string>
+    <string name="remove_delete">Remove and Delete</string>
+    <string name="edit_date_time">Edit date and time</string>
+    <string name="download_over_wifi">Download over wifi only</string>
+    <string name="change_download_directory">Change download directory</string>
+    <string name="sample_path">Android/data/</string>
+    <string name="download_path">Download Path:</string>
+    <string name="dummy_path">SD/Android/Download</string>
+    <string name="download_using_mobile">Download using mobile internet</string>
+    <string name="pause_download">Pause Download</string>
+    <string name="resume_download">Resume Download</string>
+    <string name="cancel_downlaod">Cancel Download</string>
+    <string name="download_warning_over_mobile_internet">Change settings to download over mobile internet</string>
+    <string name="warning_url">Enter valid url</string>
+    <string name="date_time_error">Some issue in date or time</string>
+    <string name="help">Help</string>
+
+    <string name="help_content">How to start a download:
+        \n \u2022 Enter url or by tapping on downloadable content in any browser the url will be copied and opened into app.
+        \n \u2022 Then you can set the date and time to start the download, or if you don\'t set then download can be started immediately.
+        \n
+        \nFor current download:
+        \n \u2022 Single Tap: Complete file name is displayed
+        \n \u2022 Long Press: If download is failed, then it can be removed or deleted.
+        \n
+        \n For future download:
+        \n \u2022 Single Tap: Complete file name is displayed
+        \n \u2022 Long Press: You can edit date and time of download or remove the download task.
+        \n
+        \n For past download:
+        \n \u2022 Single Tap: You can open the file.
+        \n \u2022 Long Press: You can remove file from the app or from the storage as well.
+        \n
+        \nSettings:
+        \n \u2022 You can set network preference to download over wifi only.
+        \n \u2022 Directory path to download can be changed.
+       </string>
+    <string name="download">Download</string>
+    <string name="download_complete">Download complete</string>
+    <string name="warning_past_date_selected">Cannot select past date</string>
+    <string name="removed">"Removed: "</string>
+    <string name="remove_and_deleted">"Removed and Deleted: "</string>
+    <string name="start_download">+ Start a download by entering url or by tapping on downloadable content in any browser.</string>
+    <string name="msg_no_internet_connectivity">No internet connection.</string>
+    <string name="repeat">Repeat</string>
+    <string name="start_date">Start Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="stop_time">Stop Time</string>
+
+</resources>
+

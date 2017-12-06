@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mi_add_url"
+        android:title="@string/add_url"
+        app:showAsAction="always"
+        android:orderInCategory="103"/>
+    <item
+        android:id="@+id/mi_settings"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        android:orderInCategory="104"/>
+
+    <item android:id="@+id/mi_help"
+          android:title="@string/help"
+          app:showAsAction="never"
+          android:orderInCategory="105"/>
+</menu>
